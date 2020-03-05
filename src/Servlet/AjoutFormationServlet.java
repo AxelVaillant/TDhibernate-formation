@@ -54,7 +54,7 @@ public class AjoutFormationServlet extends HttpServlet {
 
 		l.setIdlieu(Integer.parseInt(request.getParameter("idlieu")));
 		f.setLieu(l);
-		f.setId(Integer.parseInt(request.getParameter("id")));
+		f.setIdformation(Integer.parseInt(request.getParameter("id")));
 		f.setTheme(request.getParameter("theme"));
 		IFormationdao dao= new Formationdao();
 		int i=dao.ajoutformation(f);

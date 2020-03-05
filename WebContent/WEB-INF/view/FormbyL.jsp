@@ -29,8 +29,8 @@
 <div>
 <label>Sélectionner lieu</label>
 <select name="idlieu">
-<c:forEach items="${liste}" var="liste">
-<option value="${liste.idlieu}">${liste.ville }</option>
+<c:forEach items="${liste}" var="list">
+<option value="${list.idlieu}">${list.ville }</option>
 </c:forEach>
 </select>
 </div>

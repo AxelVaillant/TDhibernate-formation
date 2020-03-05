@@ -48,7 +48,7 @@ public class GetFormationServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Lieu l=new Lieu();
-		Formation f =new Formation();
+		//Formation f =new Formation();
 		IFormationdao dao= new Formationdao();
 		List<Formation> listf= new ArrayList<Formation>();
 		l.setIdlieu(Integer.parseInt(request.getParameter("idlieu")));

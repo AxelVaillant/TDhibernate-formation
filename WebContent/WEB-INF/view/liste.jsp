@@ -32,7 +32,7 @@
 <div class="col-sm">
 <p>ID Formation</p>
 <c:forEach items="${liste }" var="liste">
-<p>${liste.id}</p>
+<p>${liste.idformation}</p>
 </c:forEach>
 </div>
 

@@ -29,10 +29,10 @@ public class Formation {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public int getId() {
+	public int getIdformation() {
 		return idformation;
 	}
-	public void setId(int id) {
+	public void setIdformation(int id) {
 		this.idformation = id;
 	}
 	public String getTheme() {
