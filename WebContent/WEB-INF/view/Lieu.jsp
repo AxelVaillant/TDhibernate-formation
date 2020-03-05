@@ -6,7 +6,7 @@
 <head>
 <meta charset="utf-8">
 <style type="text/css"><%@ include file="bootstrap.min.css"%></style>
-<title>Liste</title>
+<title>Lieu</title>
 </head>
 <body>
 <h2>Menu</h2>
@@ -24,33 +24,8 @@
     <a class="nav-link" href="/TpHibernate/GetF">Formation par lieu</a>
   </li>
 </ul>
-<h1>Formation existantes</h1>
+<h1>${message }</h1>
 
-<div class="container">
-<div class ="row">
-
-<div class="col-sm">
-<p>ID Formation</p>
-<c:forEach items="${liste }" var="liste">
-<p>${liste.id}</p>
-</c:forEach>
-</div>
-
-<div class ="col-sm">
-<p>Theme</p>
-<c:forEach items="${liste }" var="liste">
-<p>${liste.theme}</p>
-</c:forEach>
-</div>
-
-<div class ="col-sm">
-<p>Lieu</p>
-<c:forEach items="${liste }" var="liste">
-<p>${liste.lieu.ville}</p>
-</c:forEach>
-</div>
-</div>
-</div>
 
 </body>
 </html>

@@ -16,7 +16,12 @@
   <li class="nav-item">
     <a class="nav-link" href="/TpHibernate/Liste">Liste Formation</a>
   </li>
-
+  <li class="nav-item">
+    <a class="nav-link" href="/TpHibernate/addL">Ajout lieu</a>
+  </li>
+      <li class="nav-item">
+    <a class="nav-link" href="/TpHibernate/GetF">Formation par lieu</a>
+  </li>
 </ul>
 <h1>Adaming formation</h1>
 

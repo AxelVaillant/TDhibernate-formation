@@ -2,16 +2,27 @@ package fr.adaming.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 @Entity
 @Table(name="formation")
 public class Formation {
 	@Id
-	private int id;
+	private int idformation;
 	private String theme;
+	@JoinColumn(name="idlieu")
+	@ManyToOne
+	private Lieu lieu;
+	public Lieu getLieu() {
+		return lieu;
+	}
+	public void setLieu(Lieu lieu) {
+		this.lieu = lieu;
+	}
 	public Formation(int id, String theme) {
 		super();
-		this.id = id;
+		this.idformation = id;
 		this.theme = theme;
 	}
 	public Formation() {
@@ -19,10 +30,10 @@ public class Formation {
 		// TODO Auto-generated constructor stub
 	}
 	public int getId() {
-		return id;
+		return idformation;
 	}
 	public void setId(int id) {
-		this.id = id;
+		this.idformation = id;
 	}
 	public String getTheme() {
 		return theme;
@@ -32,7 +43,7 @@ public class Formation {
 	}
 	@Override
 	public String toString() {
-		return "Formation [id=" + id + ", theme=" + theme + "]";
+		return "Formation [id=" + idformation + ", theme=" + theme + "]";
 	}
 	
 }
